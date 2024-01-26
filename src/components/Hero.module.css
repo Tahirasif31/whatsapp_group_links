@@ -1,0 +1,160 @@
+.heroContainer {
+  background-color: #1c1e53;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: #bbbbcb;
+  max-width: 85vw;
+}
+
+.hero h1 {
+  color: var(--White, #fff);
+
+  /* Heading 1 */
+  font-family: Poppins;
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 7.4rem; /* 137.037% */
+  margin-top: 7rem;
+}
+.hero p {
+  color: var(--White, #fff);
+
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem; /* 175% */
+  margin-top: 2.4rem;
+}
+.buttons {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4.8rem;
+  margin-bottom: 7rem;
+}
+
+.btnCta {
+  display: inline-flex;
+  padding: 1.6rem 5.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4.1rem;
+  background: #fcd980;
+  color: #1b1c2b;
+  font-family: Manrope;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.2rem; /* 177.778% */
+}
+
+.btnSeeAll {
+  background: none;
+  border: none;
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem; /* 175% */
+}
+.join {
+  text-decoration: none;
+}
+.submit,
+.submit:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 52% !important;
+  }
+}
+@media screen and (max-width: 1070px) {
+  html {
+    font-size: 48% !important;
+  }
+}
+@media screen and (max-width: 920px) {
+  /* .hero {
+    grid-template-columns: 1fr;
+  } */
+
+  /* .textContainer {
+    grid-row: 2/3;
+  } */
+  .hero h1 {
+    color: var(--White, #fff);
+
+    /* Heading 1 */
+    font-family: Poppins;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6.4rem; /* 137.037% */
+    margin-top: 6rem;
+  }
+  .hero p {
+    color: var(--White, #fff);
+
+    /* Paragraph */
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 2.4rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .hero h1 {
+    color: var(--White, #fff);
+
+    /* Heading 1 */
+    font-family: Poppins;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.4rem; /* 137.037% */
+    margin-top: 5rem;
+  }
+  .hero p {
+    color: var(--White, #fff);
+
+    /* Paragraph */
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 2.4rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .textContainer {
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btnCta {
+    padding: 0.8rem 2.8rem;
+  }
+  .buttons {
+    display: flex;
+    gap: 2rem;
+  }
+}

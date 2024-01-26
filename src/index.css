@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Nav Section */
+
+/* Hero Section */
+
+main {
+  background: var(--Grey, #f4f6fc);
+  margin: 0 auto;
+}
+.categories-container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem;
+  gap: 2rem;
+  justify-content: center;
+}
+.container {
+  max-width: 140rem;
+  margin: 2rem auto 0;
+  font-family: "Be Vietnam Pro";
+}
+.content-header {
+  background-color: #128b7e !important;
+  color: #fff;
+}
+.rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: #edf2f7;
+}
+.rows .col-left {
+  border: 1px solid rgba(113, 128, 150, 0.42) !important;
+}
+.cols {
+  border: 1px solid #718096;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 1200px) {
+  .categories-container {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 40% !important;
+  }
+  .categories-container {
+    max-width: 62rem;
+    margin: 0 auto;
+  }
+  .categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

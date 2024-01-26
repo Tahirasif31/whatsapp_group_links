@@ -1,0 +1,134 @@
+.nav {
+  background: #1c1e53;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 85vw;
+  height: 9.2rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem; /* 175% */
+}
+.nav .ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.nav .ul .li {
+  color: #bbbbcb;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+  justify-self: center;
+}
+.li:last-child {
+  border-radius: 4.1rem;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  margin-left: 1.6rem;
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem; /* 175% */
+  padding: 1.6rem 4.8rem;
+}
+.link {
+  text-decoration: none;
+  color: #bbbbcb;
+}
+.link.active {
+  color: #fff;
+}
+.btnMobileNav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.iconMobileNav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+/* .iconMobileNav[name="close-outline"] {
+  display: none;
+} */
+@media screen and (max-width: 1250px) {
+  .navContainer {
+    width: 90vw;
+  }
+  .nav .ul {
+    gap: 2.8rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .nav .ul {
+    gap: 1.8rem;
+  }
+  .li:last-child {
+    margin-left: 0.6rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav .ul {
+    gap: 1.2rem;
+  }
+  .li:last-child {
+    margin-left: 0.6rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .navigation {
+    background-color: #1c1e53ea;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .ul {
+    flex-direction: column;
+    gap: 7.8rem;
+  }
+  .link {
+    font-size: 3rem;
+  }
+  .btnMobileNav {
+    display: block;
+  }
+  .iconMobileNav {
+  }
+  .navOpen .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navContainer {
+    width: 88vw;
+  }
+}
