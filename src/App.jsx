@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import News from "./pages/News";
 import Home from "./pages/Home";
-import Business from "./pages/business";
+import Business from "./pages/Business";
 import Cricket from "./pages/Cricket";
 import Pubg from "./pages/Pubg";
 import Others from "./pages/Others";
