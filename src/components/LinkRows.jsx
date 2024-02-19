@@ -3,7 +3,7 @@ function LinkRows({ group }) {
   return (
     <div className="rows conent-header">
       <span className="cols">{group.name}</span>
-      <a href={group.link} className="cols">
+      <a href={group.link} className="cols" target="_blank">
         Join Now
       </a>
     </div>
